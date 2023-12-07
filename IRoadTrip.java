@@ -1,4 +1,3 @@
-import java.io.InputStreamReader;
 import java.util.*;
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -91,8 +90,6 @@ public class IRoadTrip {
         reader.close();
     }
 
-
-
     private void readStateNamesFile(String fileName) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(fileName));
         String line;
@@ -110,7 +107,6 @@ public class IRoadTrip {
         }
         reader.close();
     }
-
 
     public int getDistance (String country1, String country2) {
 //        This function provides the shortest path distance between
@@ -137,10 +133,9 @@ public class IRoadTrip {
 
 
     public List<String> findPath (String country1, String country2) {
-//        This function
-//        determines and returns the shortest path between the two countries passed as arguments (starting in the
-//        capital of country1, ending in the capital of country1, and going through the capitals of each country along
-//         the way).
+//        This function determines and returns the shortest path between the two countries passed as arguments
+//         (starting in the capital of country1, ending in the capital of country1,
+//          and going through the capitals of each country along the way).
 
         System.out.println("Country1: " + country1);
         System.out.println("Country2: " + country2);
@@ -276,7 +271,6 @@ public class IRoadTrip {
         IRoadTrip a3 = new IRoadTrip(args);
 
         a3.acceptUserInput();
-
     }
 
 }
